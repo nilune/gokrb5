@@ -10,11 +10,11 @@ import (
 	"testing"
 	"time"
 
-	"github.com/nilune/gokrb5/v8/config"
-	"github.com/nilune/gokrb5/v8/iana/etypeID"
-	"github.com/nilune/gokrb5/v8/keytab"
-	"github.com/nilune/gokrb5/v8/test"
-	"github.com/nilune/gokrb5/v8/test/testdata"
+	"github.com/jcmturner/gokrb5/v8/config"
+	"github.com/jcmturner/gokrb5/v8/iana/etypeID"
+	"github.com/jcmturner/gokrb5/v8/keytab"
+	"github.com/jcmturner/gokrb5/v8/test"
+	"github.com/jcmturner/gokrb5/v8/test/testdata"
 	"github.com/stretchr/testify/assert"
 )
 

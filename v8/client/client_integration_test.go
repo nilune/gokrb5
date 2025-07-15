@@ -14,18 +14,17 @@ import (
 	"time"
 
 	"fmt"
+	"github.com/jcmturner/gokrb5/v8/client"
+	"github.com/jcmturner/gokrb5/v8/config"
+	"github.com/jcmturner/gokrb5/v8/credentials"
+	"github.com/jcmturner/gokrb5/v8/iana/etypeID"
+	"github.com/jcmturner/gokrb5/v8/keytab"
+	"github.com/jcmturner/gokrb5/v8/spnego"
+	"github.com/jcmturner/gokrb5/v8/test"
+	"github.com/jcmturner/gokrb5/v8/test/testdata"
+	"github.com/stretchr/testify/assert"
 	"strings"
 	"sync"
-
-	"github.com/nilune/gokrb5/v8/client"
-	"github.com/nilune/gokrb5/v8/config"
-	"github.com/nilune/gokrb5/v8/credentials"
-	"github.com/nilune/gokrb5/v8/iana/etypeID"
-	"github.com/nilune/gokrb5/v8/keytab"
-	"github.com/nilune/gokrb5/v8/spnego"
-	"github.com/nilune/gokrb5/v8/test"
-	"github.com/nilune/gokrb5/v8/test/testdata"
-	"github.com/stretchr/testify/assert"
 )
 
 func TestClient_SuccessfulLogin_Keytab(t *testing.T) {

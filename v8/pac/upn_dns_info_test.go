@@ -4,7 +4,7 @@ import (
 	"encoding/hex"
 	"testing"
 
-	"github.com/nilune/gokrb5/v8/test/testdata"
+	"github.com/jcmturner/gokrb5/v8/test/testdata"
 	"github.com/stretchr/testify/assert"
 )
 

@@ -1,4 +1,4 @@
-module github.com/nilune/gokrb5/v8
+module github.com/jcmturner/gokrb5/v8
 
 go 1.16
 
@@ -12,4 +12,5 @@ require (
 	github.com/jcmturner/rpc/v2 v2.0.3
 	github.com/stretchr/testify v1.8.1
 	golang.org/x/crypto v0.6.0
+	golang.org/x/net v0.7.0 // indirect
 )
